@@ -10,7 +10,7 @@ interface Props {
 const SearchForm: React.FC<Props> = ({ query }: Props) => {
   return (
     <Form action="/" scroll={false} className="search-form">
-      <input name="query" defaultValue="" className="search-input" placeholder="Search Startups" />
+      <input name="query" defaultValue={query} className="search-input" placeholder="Search Startups" />
 
       <div className="flex gap-2">{query && <SearchFormReset />}</div>
 
