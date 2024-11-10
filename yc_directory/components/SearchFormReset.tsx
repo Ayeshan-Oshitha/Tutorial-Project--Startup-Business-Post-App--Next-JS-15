@@ -7,7 +7,7 @@ type Props = {};
 
 const SearchFormReset = (props: Props) => {
   const reset = () => {
-    const form = document.querySelector(".Search-form") as HTMLFormElement;
+    const form = document.querySelector(".search-form") as HTMLFormElement;
 
     if (form) {
       form.reset();
