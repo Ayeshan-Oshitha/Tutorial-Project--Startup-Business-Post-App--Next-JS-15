@@ -9,6 +9,7 @@ import { formSchema } from "@/lib/validation";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import { createPitch } from "@/lib/action";
 
 type Props = {};
 
@@ -31,17 +32,16 @@ const StartupForm = (props: Props) => {
 
       await formSchema.parseAsync(formValues);
       console.log("Form values", formValues);
+      const result = await createPitch(prevState, formData, pitch);
+      if (result.status == "SUCCESS") {
+        toast({
+          title: "Success",
+          description: "Your startup pitch has been created successfully",
+        });
+        router.push(`/startup/${result._id}`);
+      }
 
-      // if (result.status == "SUCCESS") {
-      //   toast({
-      //     title: "Success",
-      //     description: "Your startup pitch has been created successfully",
-      //   });
-      //   router.push(`/startup/${result.id}`);
-      // }
-
-      // return Result;
-      // const result = await createPitch(prevState, formData, pitch);
+      return result;
     } catch (error) {
       if (error instanceof z.ZodError) {
         const fieldErorrs = error.flatten().fieldErrors;
