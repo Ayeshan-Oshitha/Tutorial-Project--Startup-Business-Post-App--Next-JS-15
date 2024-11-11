@@ -22,8 +22,6 @@ const page: React.FC<Props> = async ({ params }: Props) => {
   const id = (await params).id;
   const post = await client.fetch(STARTUP_BY_ID_QUERY, { id });
 
-  console.log(post);
-
   if (!post) {
     return notFound();
   }
