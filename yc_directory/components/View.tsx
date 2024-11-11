@@ -2,7 +2,7 @@ import React from "react";
 import Ping from "./Ping";
 import { client } from "@/sanity/lib/client";
 import { STARTUP_VIEWS_QUERY } from "@/sanity/lib/queries";
-import { writeCliet } from "@/sanity/lib/write-client";
+import { writeClient } from "@/sanity/lib/write-client";
 import { unstable_after as after } from "next/server";
 
 interface Props {
@@ -14,7 +14,7 @@ const View: React.FC<Props> = async ({ id }: Props) => {
 
   after(
     async () =>
-      await writeCliet
+      await writeClient
         .patch(id)
         .set({ views: totalViews + 1 })
         .commit(),
