@@ -2,6 +2,8 @@
 
 This project is a Next.js web application for a startup business platform, integrating various modern tools and techniques for optimized performance, security, and scalability.
 
+<br/>
+
 ## Features
 
 ### 1. **Sanity CMS**
@@ -40,10 +42,14 @@ This project is a Next.js web application for a startup business platform, integ
 ### 11. **Data Fetching Strategies**
    - **Parallel and Sequential Data Fetching**: Optimized data retrieval using parallel fetching where dependencies are minimal and sequential fetching where data needs to be loaded in specific order.
 
+<br/>
+
 ## Visit the Project
 [Visit the live project here](https://ycdirectory-startup-business-website.vercel.app/)
 
-## ScreenShots
+<br/>
+
+## UI Screenshots
 
 ![YC Directory 1](https://github.com/user-attachments/assets/2ea6050b-489d-4337-ba4d-9cd7fef75970)
 
