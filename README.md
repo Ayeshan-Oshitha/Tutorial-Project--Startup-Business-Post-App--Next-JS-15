@@ -42,3 +42,32 @@ This project is a Next.js web application for a startup business platform, integ
 
 ## Visit the Project
 [Visit the live project here](https://ycdirectory-startup-business-website.vercel.app/)
+
+## ScreenShots
+
+![YC Directory 1](https://github.com/user-attachments/assets/2ea6050b-489d-4337-ba4d-9cd7fef75970)
+
+<hr/>
+
+![YC Directory 2](https://github.com/user-attachments/assets/7af4a6ee-9081-4532-8700-c47a83b143f3)
+
+<hr/>
+
+![YC Directory 3](https://github.com/user-attachments/assets/828b2367-96e5-4e15-8fea-c75f5eeec04e)
+
+<hr/>
+
+![YC Directory 4](https://github.com/user-attachments/assets/4eb7a7a3-f3d2-4d1f-82ff-81eea1f4bd5d)
+
+<hr/>
+
+![YC Directory 5](https://github.com/user-attachments/assets/d8d4c90a-6a0d-406a-bf6d-08a30b73bb17)
+
+<hr/>
+
+
+
+
+
+
+
